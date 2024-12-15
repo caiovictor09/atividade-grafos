@@ -26,7 +26,7 @@ void imprimirGrafo(int grafo[MAX_VERTICES][MAX_VERTICES], int n) {
 
 int main() {
     int n;
-    int grafo[MAX_VERTICES][MAX_VERTICES];  // Matriz de adjacência estática
+    int grafo[MAX_VERTICES][MAX_VERTICES];  // Matriz de adjacência
 
     printf("Digite o número de vértices do grafo (máximo %d): ", MAX_VERTICES);
     scanf("%d", &n);
