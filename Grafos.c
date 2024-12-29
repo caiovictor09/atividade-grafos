@@ -184,7 +184,7 @@ int main() {
                 tempoConstrutivaTotal += (double)(fimConstrutiva - inicioConstrutiva) / CLOCKS_PER_SEC;
             }
             double tempoConstrutivaMedio = tempoConstrutivaTotal / NUM_EXECUCOES;
-            printf("Tempo medio da heuristica de insercao mais barata: %.6f segundos\n", tempoConstrutivaMedio);
+            printf("Tempo medio da heuristica de insercao mais barata: %.6f milissegundos\n", tempoConstrutivaMedio*1000);
 
             double tempoRefinamentoTotal = 0;
             for (int i = 0; i < NUM_EXECUCOES; i++) {
@@ -195,7 +195,7 @@ int main() {
                 tempoRefinamentoTotal += (double)(fimRefinamento - inicioRefinamento) / CLOCKS_PER_SEC;
             }
             double tempoRefinamentoMedio = tempoRefinamentoTotal / NUM_EXECUCOES;
-            printf("Tempo medio da heuristica de refinamento (2-opt): %.6f segundos\n", tempoRefinamentoMedio);
+            printf("Tempo medio da heuristica de refinamento (2-opt): %.6f milissegundos\n", tempoRefinamentoMedio * 1000);
         } else if (opcao == 3) {
             // Sair
             printf("Encerrando o programa.\n");
